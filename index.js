@@ -22,7 +22,7 @@ const callback_dolar = function (error, response, body) {
   }
 };
 //REAL
-const callback_dolar = function (error, response, body) {
+const callback_euro = function (error, response, body) {
   try {
     let json = JSON.parse(body);
     cotacao = json.USDBRL["bid"];
