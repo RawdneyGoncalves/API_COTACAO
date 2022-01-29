@@ -37,7 +37,7 @@ const callback_euro = function (error, response, body) {
   }
 };
 //BTC
-const callback_bct = function (error, response, body) {
+const callback_btc = function (error, response, body) {
   try {
     let json = JSON.parse(body);
     cotacao = json.BTCBRL['bid'];
@@ -61,6 +61,6 @@ const callback_todas = function (error, response, body) {
 setInterval(() => {
   request(options, callback_dolar);
   request(options, callback_euro);
-  request(options, callback_bct);
+  request(options, callback_btc);
   console.log('###################');
 }, 5000);
