@@ -8,7 +8,7 @@ const options = {
     "Accept-Charset": "utf-8",
   },
 };
-//DOLAR
+// CALL BACK DO DOLLAR
 const callback_dolar = function (error, response, body) {
   try {
     let json = JSON.parse(body);
